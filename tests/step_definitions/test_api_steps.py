@@ -1,4 +1,4 @@
-from pytest_bdd import scenario, given, when, then
+from pytest_bdd import scenario, parsers, given, when, then
 
 
 # Scenario is a decorator here
@@ -7,6 +7,16 @@ def test_api():
     pass
 
 
+EXTRA_TYPES = {
+    'Number': int,
+}
+
+
 @given("API request")
 def api_request():
     assert 1 == 1
+
+
+@when(parsers.cfparse('request is equal to "{initial:Number}"', extra_types=EXTRA_TYPES))
+def request_equal(initial):
+    assert initial == initial
