@@ -11,3 +11,5 @@ pytest-bdd = "*"
 
 [requires]
 python_version = "3.9"
+
+PIPENV_IGNORE_VIRTUALENVS=1

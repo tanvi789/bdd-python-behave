@@ -2,8 +2,8 @@ from pytest_bdd import scenario, given, when, then
 
 
 # Scenario is a decorator here
-@scenario('../features/api_test.feature', 'Validation')
-def test_add():
+@scenario('../features/cucumber_api_test.feature', 'to verify the api')
+def test_api():
     pass
 
 

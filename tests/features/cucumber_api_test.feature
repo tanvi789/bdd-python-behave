@@ -1,4 +1,4 @@
 Feature: Api
 
-  Scenario: Validation
+  Scenario: to verify the api
     Given API request
